@@ -27,7 +27,12 @@ export const useWalletContext = () => {
 export default function WalletProvider({ children }: WalletProviderProps) {
   const { user } = useAuthContext();
 
-  const [wallet, setWallet] = useState<WalletData | undefined>();
+  const [wallet, setWallet] = useState<WalletData>({
+    day: new Date().toLocaleDateString('pt-br'),
+    wallet_total: 0,
+    receipts_total: 0,
+    expenses_total: 0
+  });
   const [transactions, setTransactions] = useState<TransactionData[]  | []>([]);
   const [loading, setLoading] = useState(false);
 

@@ -101,7 +101,7 @@ export const handleGettingTotals = async (req: Request, res: Response) => {
 
   return res.json({
     day,
-    wallet_total: wallet.total,
+    wallet_total: wallet?.total,
     receipts_total,
     expenses_total
   });

@@ -55,7 +55,7 @@ export type AuthStackProps = {
 };
 
 export interface WalletData {
-  id: string,
+  day: string,
   wallet_total: number,
   receipts_total: number,
   expenses_total: number,
