@@ -49,7 +49,7 @@ And it's done, run <strong>yarn dev</strong> and open your browser then access <
 Ok, inside the mobile folder, you're gonna need Expo installed so run <strong>npm i -g @expo/cli</strong> if you don't have Expo installed. <br />
 Now, run <strong>yarn</strong> or <strong>npm install</strong> to install the package.json dependencies.<br />
 
-Then, inside src/config/index.ts change the variable BASE_URL to your IP Address, example <strong>http://192.168.0.1:3333</strong> -> We use this variable to configure our api file and use it to consum the API.
+Then, inside src/config/index.ts change the variable BASE_URL to your IP Address, example <strong>http://192.168.0.1:3333</strong> -> We use this variable to configure our api file and use it to consuming properly the API with an Emulator or Smartphone.
 
 Run <strong>expo start</strong>
 
