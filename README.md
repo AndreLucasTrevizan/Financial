@@ -40,6 +40,7 @@ First create a new database called test or another name that you wish to use as 
 
 Then, after all this configuration run: <br />
 <strong>npx prisma migrate dev</strong> -> This comand runs the migration and create the database models.
+<strong>npx prisma db seed</strong> -> This command will seed the database with some necessary information. You can see inside the src/prisma/seed.ts file.
 
 And it's done, run <strong>yarn dev</strong> and open your browser then access <strong>"http://localhost:<your PORT inside the .env>/ping"</strong> and you'll see the success message.
 
